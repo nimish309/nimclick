@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/actionbar</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+    </style>
+
+    <style name="RegisterTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/actionbar</item>
+        <item name="colorPrimaryDark">@color/statusbar</item>
+        <item name="colorAccent">@color/actionbar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+    </style>
+
+    <!--<style name="MyTheme" parent="Base.MyTheme"></style>
+    <style name="MyTheme.Detail" parent="Base.MyTheme"></style>-->
+    <style name="PollsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/actionbar</item>
+    </style>
+
+
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/actionbar</item>
+        <item name="colorControlActivated">@color/actionbar</item>
+        <item name="colorAccent">@color/actionbar</item>
+    </style>
+
+
+</resources>

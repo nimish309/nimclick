@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemProfile"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Profile" />
+        <item
+            android:id="@+id/itemOffer"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Offer" />
+        <item
+            android:id="@+id/itemNetwork"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Network" />
+        <item
+            android:id="@+id/itemLevel"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Level" />
+        <item
+            android:id="@+id/itemEarnedHistory"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Earned History" />
+        <item
+            android:id="@+id/itemRedeem"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Recharge" />
+        <item
+            android:id="@+id/itemBankWithdraw"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Bank Withdraw" />
+        <item
+            android:id="@+id/itemWhatNew"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="What is New?" />
+        <item
+            android:id="@+id/itemHelp"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Help &amp; Support" />
+        <item
+            android:id="@+id/itemTerms"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Terms &amp; Condition" />
+
+        <item
+            android:id="@+id/itemTopOffers"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Top Offers" />
+        <item
+            android:id="@+id/itemHotOffers"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Hot Offers" />
+        <item
+            android:id="@+id/itemRewards"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Rewards" />
+        <item
+            android:id="@+id/itemCredits"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Credits" />
+        <item
+            android:id="@+id/itemSetting"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Setting" />
+        <item
+            android:id="@+id/itemFollow"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Follow" />
+        <item
+            android:id="@+id/itemVideo"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Video" />
+        <item
+            android:id="@+id/itemGame"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Game" />
+        <item
+            android:id="@+id/itemFunnyImages"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Funny Images" />
+        <item
+            android:id="@+id/itemProduct"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Product" />
+        <item
+            android:id="@+id/itemShopping"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Shopping" />
+        <item
+            android:id="@+id/itemEncylopedia"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Encylopedia" />
+        <item
+            android:id="@+id/itemKnowledge"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Knowledge" />
+        <item
+            android:id="@+id/itemAboutUs"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/itemChangePassword"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/itemLogout"
+            android:checked="true"
+            android:icon="@drawable/icon_a"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

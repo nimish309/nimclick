@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rowEarnedList"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/activityBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/unit_8dp"
+        android:paddingRight="@dimen/unit_8dp">
+
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtDate"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/unit_4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtAmount"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/unit_4dp"
+            android:layout_weight="1.05"
+            android:gravity="center"
+            android:text="Amount(₹)"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtRemarks"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Remarks"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/earnedListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical" />
+
+    <include layout="@layout/progressbar_nodata" />
+
+</LinearLayout>

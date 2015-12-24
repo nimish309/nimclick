@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/activityBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:background="@color/activityBackground"
+        android:gravity="center"
+        android:padding="@dimen/unit_20dp"
+        android:orientation="vertical">
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+            android:id="@+id/etVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verification code"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@android:color/black" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_16dp"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black" />
+
+
+        <com.foresight.clickonmoney.customcontroll.TypedfacedButton
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_24dp"
+            android:background="@color/actionbar"
+            android:text="Verify"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Click On Money</string>
+    <!--<string name="banner_ad_id">ca-app-pub-7199358759457641/7098026211</string>-->
+    <!--<string name="banner_ad_id_1">ca-app-pub-2272616727762671/2310768543</string>-->
+    <!--<string name="fullscreen_ad_id">ca-app-pub-7199358759457641/2528225811</string>-->
+    <!--<string name="video_ad_id">ca-app-pub-7199358759457641/4004959014</string>-->
+    <string name="facebook_app_id">903907569645838</string>
+    <string name="google_api_key">AIzaSyDqvOABtGTCOZ9WaKJFURw6HVS7s1HnOog</string>
+
+    <string name="banner_ad_id_1">ca-app-pub-2201457064524286/4829749655</string>
+    <string name="banner_ad_id_2">ca-app-pub-2201457064524286/2849828855</string>
+    <string name="banner_ad_id_3">ca-app-pub-2201457064524286/4326562052</string>
+    <string name="banner_ad_id_4">ca-app-pub-2201457064524286/7280028456</string>
+
+    <!--//popup and video-->
+    <!--<string name="fullscreen_ad_id">ca-app-pub-2201457064524286/8896362450</string>-->
+    <!--<string name="video_ad_id">ca-app-pub-2201457064524286/4186961256</string>-->
+
+</resources>

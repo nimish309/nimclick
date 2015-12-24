@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_48dp"
+        android:background="@color/activityBackground"
+        android:orientation="horizontal">
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtPrepaid"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/unit_0.5dp"
+            android:layout_weight="1"
+            android:background="@color/lightactionbar"
+            android:gravity="center"
+            android:text="Recharge"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/unit_16dp"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtPost"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/unit_0.5dp"
+            android:layout_weight="1"
+            android:background="@color/lightactionbar"
+            android:gravity="center"
+            android:text="Bill"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/unit_16dp"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtHistory"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightactionbar"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/unit_16dp"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activityBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unit_0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="288dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerOperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/unit_15dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/unit_15dp"
+                    android:orientation="horizontal">
+
+                    <com.foresight.clickonmoney.customcontroll.TypefacedRadioButton
+                        android:id="@+id/radioTopup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="TopUp"
+                        app:fontStyle="regular" />
+
+                    <com.foresight.clickonmoney.customcontroll.TypefacedRadioButton
+                        android:id="@+id/radioScheme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Scheme"
+                        app:fontStyle="regular" />
+                </RadioGroup>
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+                    android:id="@+id/etMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableRight="@drawable/icon_contacts"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Mobile No."
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+                    android:id="@+id/etMobileAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Amount"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+                <com.foresight.clickonmoney.customcontroll.TypedfacedButton
+                    android:id="@+id/btnMobileRecharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_selector"
+                    android:text="Recharge"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unit_0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activityBackground"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/activityBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/unit_8dp"
+                android:paddingRight="@dimen/unit_8dp">
+
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                    android:id="@+id/txtOperator"
+                    android:layout_width="@dimen/unit_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/unit_4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontStyle="bold" />
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                    android:id="@+id/txtMobile"
+                    android:layout_width="@dimen/unit_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Mobile No"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontStyle="bold" />
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="@dimen/unit_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/unit_4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Amount (₹)"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:fontStyle="bold" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/historyListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical" />
+
+            <include layout="@layout/progressbar_nodata" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

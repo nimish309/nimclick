@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowEarnedList"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:paddingLeft="@dimen/unit_8dp"
+    android:paddingRight="@dimen/unit_8dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+
+    <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+        android:id="@+id/txtDate"
+        android:layout_width="@dimen/unit_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="20-05-2015"
+        android:layout_marginRight="@dimen/unit_4dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/unit_12dp"
+        app:fontStyle="regular" />
+
+    <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+        android:id="@+id/txtAmount"
+        android:layout_width="@dimen/unit_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/unit_4dp"
+        android:text="0.00"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/unit_12dp"
+        app:fontStyle="regular" />
+
+    <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+        android:id="@+id/txtRemarks"
+        android:layout_width="@dimen/unit_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="First Download Or Refer To Someone"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/unit_12dp"
+        app:fontStyle="regular" />
+</LinearLayout>

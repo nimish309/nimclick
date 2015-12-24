@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/unit_4dp"
+    android:layout_marginLeft="@dimen/unit_8dp"
+    android:layout_marginRight="@dimen/unit_8dp"
+    android:layout_marginTop="@dimen/unit_4dp"
+    android:background="@android:color/white"
+    android:elevation="@dimen/unit_2dp"
+    app:cardCornerRadius="@dimen/unit_4dp">
+
+
+    <LinearLayout
+        android:id="@+id/rowNetworkList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/unit_8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtName"
+                android:layout_width="@dimen/unit_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_2dp"
+                android:layout_marginRight="@dimen/unit_4dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Nimish Bhoraniya"
+                android:textColor="@android:color/black"
+                app:fontStyle="bold" />
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtTotalUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_2dp"
+                android:background="@drawable/btn"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/unit_2dp"
+                android:paddingLeft="@dimen/unit_4dp"
+                android:paddingRight="@dimen/unit_4dp"
+                android:paddingTop="@dimen/unit_2dp"
+                android:singleLine="true"
+                android:text="100"
+                android:textColor="@android:color/white"
+                app:fontStyle="regular" />
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtAdview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_2dp"
+                android:background="@drawable/adbtn"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/unit_2dp"
+                android:paddingLeft="@dimen/unit_4dp"
+                android:paddingRight="@dimen/unit_4dp"
+                android:paddingTop="@dimen/unit_2dp"
+                android:singleLine="true"
+                android:text="100"
+                android:textColor="@android:color/white"
+                app:fontStyle="regular" />
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtUserAdView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_2dp"
+                android:background="@drawable/useradbtn"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/unit_2dp"
+                android:paddingLeft="@dimen/unit_4dp"
+                android:paddingRight="@dimen/unit_4dp"
+                android:paddingTop="@dimen/unit_2dp"
+                android:singleLine="true"
+                android:text="100"
+                android:textColor="@android:color/white"
+                app:fontStyle="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtEmail"
+                android:layout_width="@dimen/unit_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/unit_4dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="nimishbhoraniya007@gmail.com"
+                android:textColor="@android:color/black"
+                app:fontStyle="regular" />
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLength="18"
+                android:text="Morbi"
+                android:textColor="@android:color/black"
+                app:fontStyle="regular" />
+
+        </LinearLayout>
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="9974464448"
+            android:textColor="@android:color/black"
+            app:fontStyle="regular" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

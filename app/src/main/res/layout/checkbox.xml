@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.foresight.clickonmoney.customcontroll.TypefacedCheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkbox"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/unit_48dp"
+    android:paddingLeft="@dimen/unit_32dp"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:background="@drawable/custom_checkbox"
+    android:textColor="@android:color/black"/>

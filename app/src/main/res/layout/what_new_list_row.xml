@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/unit_4dp"
+    android:layout_marginLeft="@dimen/unit_8dp"
+    android:layout_marginRight="@dimen/unit_8dp"
+    android:layout_marginTop="@dimen/unit_4dp"
+    android:background="@android:color/white"
+    android:elevation="@dimen/unit_2dp"
+    app:cardCornerRadius="@dimen/unit_4dp">
+
+    <com.foresight.clickonmoney.customcontroll.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_type="rectangle">
+
+    <LinearLayout
+        android:id="@+id/rowWhatNewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/unit_8dp">
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nimish Bhoraniya"
+            android:textColor="@android:color/black"
+            app:fontStyle="bold" />
+
+
+    </LinearLayout></com.foresight.clickonmoney.customcontroll.RippleView>
+</android.support.v7.widget.CardView>

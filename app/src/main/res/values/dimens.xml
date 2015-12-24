@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="unit_0dp">0dp</dimen>
+    <dimen name="unit_0.5dp">0.5dp</dimen>
+    <dimen name="unit_1dp">1dp</dimen>
+    <dimen name="unit_2dp">2dp</dimen>
+    <dimen name="unit_3dp">3dp</dimen>
+    <dimen name="unit_4dp">4dp</dimen>
+    <dimen name="unit_5dp">5dp</dimen>
+    <dimen name="unit_8dp">8dp</dimen>
+    <dimen name="unit_9dp">9dp</dimen>
+    <dimen name="unit_10dp">10dp</dimen>
+    <dimen name="unit_12dp">12dp</dimen>
+    <dimen name="unit_14dp">14dp</dimen>
+    <dimen name="unit_15dp">15dp</dimen>
+    <dimen name="unit_16dp">16dp</dimen>
+    <dimen name="unit_18dp">18dp</dimen>
+    <dimen name="unit_20dp">20dp</dimen>
+    <dimen name="unit_24dp">24dp</dimen>
+    <dimen name="unit_28dp">28dp</dimen>
+    <dimen name="unit_32dp">32dp</dimen>
+    <dimen name="unit_40dp">40dp</dimen>
+    <dimen name="unit_41dp">41dp</dimen>
+    <dimen name="unit_44dp">44dp</dimen>
+    <dimen name="unit_48dp">48dp</dimen>
+    <dimen name="unit_52dp">52dp</dimen>
+    <dimen name="unit_56dp">56dp</dimen>
+    <dimen name="unit_64dp">64dp</dimen>
+    <dimen name="unit_80dp">80dp</dimen>
+    <dimen name="unit_140dp">140dp</dimen>
+    <dimen name="unit_152dp">152dp</dimen>
+    <dimen name="unit_168dp">168dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_48dp"
+        android:background="@color/activityBackground"
+        android:orientation="horizontal">
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtRequest"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/unit_0.5dp"
+            android:layout_weight="1"
+            android:background="@color/lightactionbar"
+            android:gravity="center"
+            android:text="Request"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/unit_16dp"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtPending"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/unit_0.5dp"
+            android:layout_weight="1"
+            android:background="@color/lightactionbar"
+            android:gravity="center"
+            android:text="Pending"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/unit_16dp"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+            android:id="@+id/txtTransaction"
+            android:layout_width="@dimen/unit_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightactionbar"
+            android:gravity="center"
+            android:text="Transaction"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/unit_16dp"
+            android:textStyle="bold"
+            app:fontStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutRequest"
+        android:layout_width="288dp"
+        android:layout_height="match_parent"
+        android:background="@color/activityBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+            android:id="@+id/etBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_16dp"
+            android:hint="Bank name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="100"
+            android:textColor="@android:color/black" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+            android:id="@+id/etAccountNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_16dp"
+            android:hint="Account No"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="20"
+            android:textColor="@android:color/black" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+            android:id="@+id/etIsfcCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_16dp"
+            android:hint="IFSC Code"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@android:color/black" />
+
+        <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_16dp"
+            android:hint="Amount"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:textColor="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_16dp"
+            android:orientation="horizontal">
+
+            <com.foresight.clickonmoney.customcontroll.TypedfacedButton
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/unit_4dp"
+                android:layout_weight="1"
+                android:background="@color/actionbar"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+
+            <com.foresight.clickonmoney.customcontroll.TypedfacedButton
+                android:id="@+id/btnRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/unit_4dp"
+                android:layout_weight="1"
+                android:background="@color/actionbar"
+                android:text="Redeem"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activityBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pendingListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical" />
+
+        <include layout="@layout/progressbar_nodata" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activityBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/transactionListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtNoResult1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="No Result Found."
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/unit_20dp"
+                app:fontStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

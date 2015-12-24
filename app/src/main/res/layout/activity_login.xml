@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/unit_8dp">
+
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/unit_32dp"
+                android:text="Click On Money"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/unit_40dp"
+                app:fontStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+                        android:id="@+id/etMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_border"
+                        android:focusable="true"
+                        android:hint="Mobile No"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:nextFocusForward="@+id/etPassword"
+                        android:paddingBottom="@dimen/unit_4dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/unit_18dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/unit_16dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.foresight.clickonmoney.customcontroll.TypefacedEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_border"
+                        android:focusable="true"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:nextFocusForward="@+id/etPassword"
+                        android:paddingBottom="@dimen/unit_4dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="@dimen/unit_18dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unit_32dp"
+                android:background="@android:color/white"
+                android:elevation="@dimen/unit_5dp"
+                app:cardCornerRadius="@dimen/unit_3dp">
+
+                <com.foresight.clickonmoney.customcontroll.TypedfacedButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:text="Login"
+                    android:textColor="@color/actionbar"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/unit_8dp"
+                    android:text="------- OR -------"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/unit_18dp"
+                    app:fontStyle="regular" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/btn_sign_in"
+                        android:layout_width="@dimen/unit_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/unit_8dp"
+                    android:text="------- OR -------"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/unit_18dp"
+                    app:fontStyle="regular" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/unit_16dp"
+                    android:background="@android:color/white"
+                    android:elevation="@dimen/unit_5dp"
+                    app:cardCornerRadius="@dimen/unit_3dp">
+
+                    <com.foresight.clickonmoney.customcontroll.TypedfacedButton
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:text="Create An Account"
+                        android:textColor="@color/actionbar"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/unit_8dp"
+            android:visibility="gone">
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtForgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="@dimen/unit_8dp"
+                android:text="Recover Account"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"
+                app:fontStyle="regular" />
+
+
+            <com.foresight.clickonmoney.customcontroll.TypefacedTextView
+                android:id="@+id/txtRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/unit_8dp"
+                android:text="Create An Account"
+                android:textColor="@android:color/white"
+                app:fontStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unit_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+</LinearLayout>
